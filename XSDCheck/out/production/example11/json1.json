@@ -1,0 +1,14 @@
+{
+  "phoneBook": {
+    "person": [
+      {
+        "name": "권오수",
+        "phone": "010-3033-9493"
+      },
+      {
+        "name": "Jane Smith",
+        "phone": "111-222-3333"
+      }
+    ]
+  }
+}
