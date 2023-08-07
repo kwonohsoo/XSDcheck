@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> <!-- xs : namespace -->
 
-  <xs:element name="phoneBook">
-    <xs:complexType> <!-- phoneBook 요소의 복합 타입 -->
-      <xs:sequence> <!-- phoneBook 안에 포함될 요소들의 순서 정의 / person 여러 번 반복-->
-        <xs:element name="person" maxOccurs="unbounded"> <!-- preson은 여러 개의 인스턴스를 가질 수 있음 -->
-          <xs:complexType>
-            <xs:sequence> <!-- name, phone 순서대로 포함 -->
-              <xs:element name="name" type="xs:string"/> <!-- 문자열 타입 -->
-              <xs:element name="phone" type="xs:string"/> <!-- 문자열 타입 -->
+    <xs:element name="phoneBook">
+        <xs:complexType> <!-- phoneBook 요소의 복합 타입 -->
+            <xs:sequence> <!-- phoneBook 안에 포함될 요소들의 순서 정의 / person 여러 번 반복-->
+                <xs:element name="person" maxOccurs="unbounded"> <!-- preson은 여러 개의 인스턴스를 가질 수 있음 -->
+                    <xs:complexType>
+                        <xs:sequence> <!-- name, phone 순서대로 포함 -->
+                            <xs:element name="name" type="xs:string"/> <!-- 문자열 타입 -->
+                            <xs:element name="phone" type="xs:string"/> <!-- 문자열 타입 -->
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+        </xs:complexType>
+    </xs:element>
 
 </xs:schema>

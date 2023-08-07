@@ -3,7 +3,9 @@ import java.io.*;
 import javax.xml.transform.Source; // XML 변환 클래스
 import javax.xml.transform.stream.StreamSource; // XML 문서 읽기
 import javax.xml.validation.*; // XML 유효성 검사
+
 import org.xml.sax.SAXException; // XML 파싱 예외 처리
+
 public class XSDCheck { // XML 유효성 검사 클래스
 
     public static void main(String[] args) {
